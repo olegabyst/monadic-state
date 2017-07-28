@@ -1,0 +1,19 @@
+{
+  "name": "monadic-state",
+  "description": "Monadic state management",
+  "author": "Oleg Tsyba",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "state",
+    "monad"
+  ],
+  "devDependencies": {
+    "chai": "^4.1.0",
+    "mocha": "^3.4.2"
+  },
+  "license": "MIT"
+}
