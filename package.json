@@ -5,7 +5,14 @@
   "version": "0.1.0",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "keywords": [
     "state",
@@ -13,7 +20,10 @@
   ],
   "devDependencies": {
     "chai": "^4.1.0",
-    "mocha": "^3.4.2"
+    "husky": "^0.14.3",
+    "lint-staged": "^4.0.2",
+    "mocha": "^3.4.2",
+    "prettier": "^1.5.3"
   },
   "license": "MIT"
 }
